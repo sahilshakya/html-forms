@@ -1,0 +1,71 @@
+*{
+    font-family: 'Poppins', sans-serif;}
+
+
+h1{
+    text-align: center;
+}
+
+img{
+    width: 500px;
+    height: auto;
+    border-radius: 50px;
+    
+}
+
+.images{
+    text-align: center;
+
+}
+
+.description h3{
+    text-align: center;
+
+}
+
+.description li{
+    padding: 10px 0px;
+}
+
+button{
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 100px;
+    padding: 5px;
+    background-color: #465EAA;
+    color: white;
+}
+
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;}
+
+
+
+table{
+    border:1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+
+}
+ td, th{
+    border:1px solid black;
+    padding: 10px 5px;
+    margin: 0;
+
+
+    
+    
+}
+
+th{
+    background-color: bisque;
+    text-align: left;
+}
+
+td{
+    background-color:rgb(224, 248, 226);
+
+}
+
+
