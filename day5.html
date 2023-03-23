@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* float property */
+        .box{
+            border: 1px solid blue;
+            height: 1000px;
+            position: relative;
+        }
+        .content{
+            border: 1px solid red;
+            height: 200px;
+            width: 200px;
+        }
+
+
+        .content-1{
+            float: left;
+            margin: 5px 5px;
+        }
+        .content-2{
+            float: left;
+            margin: 5px 0px;
+        } .content-3{
+            float: left;
+            margin: 5px 0px;
+        } .content-4{
+            float: left;
+            
+            margin: 5px 0px;
+        }
+        p{
+            clear: both;
+        }
+
+        /* for position */
+        .relative{
+            position: relative;
+            top: 50px;
+        }
+
+        .abosulte{
+            position: absolute;
+            top: 10px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- for float -->
+    <!-- <div class="box">
+        <div class="content-1 content">hello</div>
+        <div class="content-2 content">world</div>
+        <div class="content-3 content">this is 3rd</div>
+        <div class="content-4 content">this is 4th</div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur libero qui temporibus aut voluptate sed ducimus quo, beatae odit tempora!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur libero qui temporibus aut voluptate sed ducimus quo, beatae odit tempora!</p>
+
+    </div> -->
+
+    <!-- positions -->
+    <div class="box">
+        <div class="relative content">position relaive</div>
+        <div class="absolute content">position absolute</div>
+        <div class="sticky content">content sticky</div>
+        <div class="fixed content">content fixed</div>
+
+
+    </div>
+
+
+    
+</body>
+</html>
