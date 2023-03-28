@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+
+    
+
+
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1462332420958-a05d1e002413?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1207&q=80");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+
+
+nav{
+display: flex;
+padding: 2% 6%;
+justify-content: space-between;
+align-items: center;
+
+}
+
+nav img{
+    width: 50px;
+}
+
+
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+  }
+  
+  
+  
+  .nav-links li a{
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  
+  }
+
+  .nav-links li a::after{
+    content: "";
+    background: #fff;
+    height: 2px;
+    position: absolute;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    /* margin-top:5px; */
+  }
+
+  .nav-links li a:hover::after{
+    width: 100%;
+    transition: 0.5s;
+
+  }
+
+  .fa-solid{
+    display: none;
+  }
+
+
+  @media only screen and (max-width:768px) {
+
+    .fa-solid{
+      display: block;
+    }
+
+    .nav-links li{
+      display: block;
+    }
+
+    .nav-links{
+      background-color: black;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      height: 200px;
+    }
+
+    .nav-links ul{
+      padding-top:50px ;
+      padding-right:20px ;
+
+    }
+
+    .fa-bars{
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      color: #fff;
+    }
+
+    .fa-xmark{
+      color: #fff;
+      position: absolute;
+      right: 147px;
+    top: 10px;
+      display: block;
+      z-index: 999;
+    }
+
+
+
+
+    
+  }
