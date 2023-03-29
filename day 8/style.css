@@ -75,12 +75,148 @@ nav img{
     display: none;
   }
 
+  .text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    color: #fff;
+  }
+
+  .text-box h3{
+    font-size: 4em;
+  }
+
+  .text-box p{
+    font-size: 1em;
+  }
+
+  /* courses css */
+
+  .courses{
+    text-align: center;
+    margin: 3% auto;
+   width: 80%;
+  }
+
+  .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .corse-col{
+    width: 30%;
+    padding: 10px;
+    background-color: rgb(252, 246, 238);
+    padding: 20px 12px;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+
+  .corse-col:hover{
+    box-shadow: 0 0 20px 0 rgb(186, 186, 186);
+    transform: scale(1.1);
+  }
+
+  /* about section */
+
+  .about-section{
+    width: 100%;
+  }
+  
+  .container{
+    width: 80%;
+    margin: auto;
+  }
+
+  .content-section{
+    float: left;
+    width: 50%;
+    clear: both;
+
+  }
+
+  .image-section{
+    float: right;
+    width: 50%;
+   
+    
+    
+  }
+  .image-section img{
+    width: 100%;
+    
+  }
+
+  .title{
+    text-transform: uppercase;
+    font-size: 48x;
+  }
+
+  .content-section .social a{
+    text-decoration: none;
+    color: black;
+    padding-right: 10px;
+    font-size: 20px;
+    
+  }
+
+
+  /* .contactus */
+
+  .contactus{
+    width: 100%;
+    clear: both;
+    margin-top:30px;
+
+  }
+
+  .contactus .container-contact{
+    width: 80%;
+    margin: 10px auto;
+    padding: 5%;
+  }
+
+
+  .contactus input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  label{
+  padding-bottom: 10px;
+  }
+
+  input[type=submit]{
+    background-color: #597cd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover{
+    background-color: #5b59d4;
+
+
+
+  }
+
+
+
+
+
+
+
+
 
   @media only screen and (max-width:768px) {
 
-    .fa-solid{
-      display: block;
-    }
+    
 
     .nav-links li{
       display: block;
@@ -93,7 +229,9 @@ nav img{
       position: absolute;
       right: 0px;
       top: 0px;
-      height: 200px;
+      height: 100vh;
+      z-index: 3;
+      width: 200px;
     }
 
     .nav-links ul{
@@ -103,21 +241,50 @@ nav img{
     }
 
     .fa-bars{
-      position: absolute;
-      right: 20px;
-      top: 10px;
+      
       color: #fff;
+      display: block;
+      z-index: 1
     }
 
     .fa-xmark{
       color: #fff;
-      position: absolute;
-      right: 147px;
-    top: 10px;
+      
       display: block;
       z-index: 999;
     }
 
+    .text-box{
+      
+     
+      color: #fff;
+    }
+
+
+    .text-box h3{
+      font-size: 3em;
+    }
+  
+    .text-box p{
+      font-size: .7em;
+    }
+
+    
+  .corse-col{
+    width: 100%;}
+
+    .content-section{
+      float: none;
+      width: 100%;
+  
+    }
+  
+    .image-section{
+      float: none;
+      width: 100%;
+      
+      
+    }
 
 
 
