@@ -76,7 +76,7 @@
     console.log(index);
     console.log(value);
 
-    if(a !==''){
+    if(value !==''){
         actualData.push(value);
     }
 
@@ -84,5 +84,28 @@
  });
 
  console.log(actualData);
+
+
+
+ const arr =['null',2,9,13, undefined, 17, 10,55,26];
+
+ let onlyNumber=[];
+
+ arr.map((value,index)=>{
+
+    console.log(value);
+    if(value%1===0 && value%value===0){
+        onlyNumber=value;
+
+    }
+    else{
+        console.log("it is not prime number")
+    }
+
+ });
+
+
+ console.log(onlyNumber);
+
 
 
