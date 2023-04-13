@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let numList = [5, 27, 45, 58, 33, 47, 59, 90, 99];
+
+for (let i = 1; i < numList.length; i++)
+  for (let j = 0; j < i; j++)
+    if (numList[i] < numList[j]) {
+      let temp = numList[i];
+      numList[i] = numList[j];
+      numList[j] = temp;
+    }
+console.log(numList);
+    </script>
+    
+</body>
+</html>

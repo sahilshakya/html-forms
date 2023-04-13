@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // higher array method
+        const array =[9,10,71,12,53,20];
+
+        let forEachArray = array.forEach((value, index) =>{
+            return value +=1;
+        }) // for each doesnot return array
+
+        let mapArray = array.map((value) =>{
+            return value +=1;
+        })
+
+        // filter
+
+        let filterArray = array.filter((value) =>{
+            console.log(value);
+            return value >=50;
+        })
+        console.log(forEachArray);
+        console.log(mapArray);
+        console.log("filter array", filterArray);
+
+
+        let product =[
+            {name:"", price:100},
+            {name:"iphone", price:100},
+            {name:"samsung", price:90},
+            {name:"", price:10},
+            {name:"motorola", price:30},
+        ]
+
+        let onlyProductName = product.filter((item)=>{
+            return item.name !== "";
+
+        })
+
+
+        console.log(onlyProductName);
+
+
+        //  reduce method
+        const num = [1,2,3,4,7];
+   
+        const total = num.reduce((accumulator, value)=>{
+            console.log("sum ",accumulator);
+            console.log("value",value);
+
+            return accumulator + value;
+
+        },0)
+
+
+        console.log(total);
+
+        const string = ['sahil','shakya'];
+
+
+
+        const fullName =string.reduce((accumulator,name)=>{
+            return accumulator+name;
+
+        },"");
+
+        console.log(fullName);
+
+        //grouping by age using reduce method
+
+
+       //sort
+
+       let numbers = [21,41,22,1,700];
+
+       let sortedValue=numbers.sort((a,b)=>{
+        return a-b; //ascendin and b-a for decending
+       });
+
+       console.log(sortedValue);
+
+    //    local storage session storage
+
+    //
+
+    fetch('https://dummyjson.com/products').then((response)=>{
+        return response.json();
+
+    }).then((value)=>{
+        console.log(value);
+    });
+
+
+
+
+      
+
+
+
+
+    </script>
+</body>
+</html>

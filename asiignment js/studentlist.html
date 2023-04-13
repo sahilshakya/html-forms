@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping by age using reduce method</title>
+</head>
+<body>
+
+
+    <script>
+
+        let peoples = [
+        { name: "Ram", age: 17 },
+        { name: "syam", age: 16 },
+        { name: "test", age: 18 },
+        { name: "Sita", age: 19 },
+        { name: "sahil", age: 19 },
+        { name: "hari", age: 21 },
+        { name: "parbat", age: 21 },
+        { name: "navaraj", age: 21 },
+      ];
+
+    //   object destructring
+
+
+    // const {name, age} ={ name: "sahil", age: 19};
+
+    // console.log(name);
+
+
+    //reducemethod
+
+    // groupAge =[]
+    // groupAge[age].push();
+
+
+      const groupedData = peoples.reduce((acc, person)=>{
+
+        let {name , age} = person; // same as age = person.age,  using object destruturing
+
+        if (acc[age] === undefined){
+            acc[age] =[]; //acc.age & acc[age] are same
+        }
+
+       
+            acc[age].push(person);
+            return acc;
+      
+
+      },[]);
+
+      console.log(groupedData);
+    </script>
+    
+</body>
+</html>
